@@ -33,6 +33,10 @@ body > div {
     color: #333333;
 }
 
+.toast header > img {
+    cursor: pointer;
+}
+
 .toast p {
     font-size: 14px;
     margin: 4px 0px 0px 0px;
@@ -47,6 +51,7 @@ body > div {
 .toast.success{
     border-color: #6FCF97;
 }
+
 .toast.success .icon{
     background-image: url(images/successIcon.svg);
 }
