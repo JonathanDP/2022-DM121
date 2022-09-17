@@ -13,9 +13,11 @@ h1 {
     background-color: green;
     padding: 15px;
 }
-.highlight{
+
+.highlight:hover{
     padding: 2px;
     background-color: blueviolet;
+    transition: 0.5s all ease-in-out 
 }
 .extra{
     border-radius: 10px;
@@ -31,4 +33,21 @@ p {
     margin-bottom: 50px;
     border-bottom: 2px solid white;
     padding: 5px 10px 15px; 
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:link:hover{
+    text-decoration: underline;
+    text-decoration-color: aqua
+}
+
+a:link:hover[href^='http']::after{
+    content: ' ↗';
+}
+p::selection{
+    background-color: black;
+    color: pink
 }
