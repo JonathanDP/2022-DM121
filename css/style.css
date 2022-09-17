@@ -26,3 +26,9 @@ h1 {
 [title]{
     cursor: help;
 }
+
+p {
+    margin-bottom: 50px;
+    border-bottom: 2px solid white;
+    padding: 5px 10px 15px; 
+}
