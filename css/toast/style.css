@@ -7,10 +7,31 @@
     width: 320px;
     border: 1px solid gray;
     border-radius: 6px;
+    display: flex;
+    gap: 1px;
+    align-items: center;
 }
 
-.toast .icon{
+.toast .icon {
     width: 32;
     height: 32;
     background: url(images/infoButton.svg) no-repeat;
+}
+
+.toast section {
+    flex-grow: 1;
+}
+
+.toast h2 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.toast p {
+    font-size: 14px;
+}
+
+.toast header {
+    display: flex;
+    justify-content: space-between;
 }
