@@ -50,11 +50,13 @@ section {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-start;
     padding: 24px 16px 0px;
     gap: 8px;
     position: relative;
     width: 400px;
-    height: 600px;
+    height: 640px;
     overflow-y: scroll;
 }
