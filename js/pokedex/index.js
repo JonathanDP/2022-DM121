@@ -42,7 +42,7 @@ async function createPokemon(pokeNumber) {
     order.textContent = `#${pokemon.order}`
     elementName.textContent = element;
     img.src = pokemon.sprites.front_default;
-    
+
     nameDiv.appendChild(name);
     div.appendChild(order);
     div.appendChild(img);
@@ -58,4 +58,4 @@ async function createPokemon(pokeNumber) {
 
 for (var nPoke = 0; nPoke <= 152; nPoke++) {
     createPokemon(nPoke)
- }
+}
