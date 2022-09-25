@@ -30,23 +30,30 @@ async function fetchData(pokeNumber) {
 async function createPokemon(pokeNumber) {
     const pokemon = await fetchData(pokeNumber);
     let element = `${pokemon.types[0].type['name']}`;
+
     const div = document.createElement("div");
     const nameDiv = document.createElement("div");
     const name = document.createElement("h2");
-    const elementName = document.createElement("h2");
+    const elementName = document.createElement("p");
     const order = document.createElement("h4")
     const img = document.createElement("img");
+
     name.textContent = `${pokemon.name}`;
     order.textContent = `#${pokemon.order}`
     elementName.textContent = element;
     img.src = pokemon.sprites.front_default;
+    
+    nameDiv.appendChild(name);
     div.appendChild(order);
     div.appendChild(img);
     div.appendChild(elementName);
-    nameDiv.appendChild(name);
     div.appendChild(nameDiv);
-    div.style.backgroundColor = elementsColor[element]
-    document.body.appendChild(div);
+
+    elementName.style.color = elementsColor[element]
+    order.style.color = elementsColor[element]
+    nameDiv.style.backgroundColor = elementsColor[element]
+    div.style.borderColor = elementsColor[element]
+    document.getElementById("mainFrame").appendChild(div);
 }
 
 for (var nPoke = 0; nPoke <= 152; nPoke++) {
