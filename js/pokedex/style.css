@@ -59,4 +59,40 @@ section {
     width: 400px;
     height: 640px;
     overflow-y: scroll;
+    justify-content: space-between;
+}
+
+section img.icon {
+    width: 24px;
+    height: 30px;
+    left: 4px;
+    top: 4px;
+    padding: 0px 4px;
+}
+
+h1 {
+    margin: 0;
+    padding: 2px 4px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #212121;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    padding: 0px 8px;
+    gap: 16px;
+    gap: 10px 100px;
+    width: 380px;
+    height: 30px;
+    border: 1px solid black
+}
+
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
 }
